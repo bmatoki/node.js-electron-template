@@ -1,0 +1,45 @@
+{
+  "name": "electron-template",
+  "version": "1.0.0",
+  "description": "electron electron-template",
+  "main": "main.js",
+  "scripts": {
+    "compile": "babel ./app/js/babel/ --out-dir ./app/js/",
+    "start": "npm run compile && electron .",
+    "test": "mocha --timeout 20000",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "electron-template",
+    "asar": true,
+    "win": {
+      "target": ["nsis:ia32", "nsis:x64"],
+      "icon": "icon/icon.ico"
+      
+    }
+  },
+  "dependencies": {
+    "electron-reload": "^1.2.5",
+    "jquery": "^3.3.1",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "electron": "^2.0.11",
+    "electron-builder": "^20.38.5",
+    "electron-prebuilt": "^1.4.13",
+    "electron-rebuild": "^1.8.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "mocha": "^5.2.0",
+    "spectron": "^5.0.0"
+  },
+  "author": "Boaz matoki",
+  "license": ""
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- Import jquery and booststrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/jquery.ui.css">
+  <script type="text/javascript" src="./js/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+  <script>
+    require('./js/bootstrap.min.js');
+    require('./js/jquery.ui.js');
+    require('./js/jquery-confirm.min.js');
+  </script>
+  <!-- local css-->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/jquery-confirm.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+  <script type="text/javascript" src="./js/jquery-confirm.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      </div>
+    </div>
+  <script src="./js/index.js"></script>
+  <script>
+    const { ipcRenderer } = require('electron');
+    ipcRenderer.on('action-update-label', (event, arg) => {
+
+      // to update the ui in the second window.
+      if( arg === 'update' ) {
+        // do an action if emit
+      }
+    });
+  </script>
+</body>
+
+</html>
