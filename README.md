@@ -2,7 +2,7 @@
 Build cross platform desktop apps with Node.js , JavaScript, HTML, and CSS.
 
 ```
-2 windows include ,
+Exe installer x86 x64 compiler include ,
 logs include.
 one instance include.
 icon include.
